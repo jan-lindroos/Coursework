@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75AF7F04DE9311A21679A030 /* Pods_Coursework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084E06B2D648ECA6A400C8D3 /* Pods_Coursework.framework */; };
 		ED841DF429C78E63005CFC58 /* CourseworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED841DF329C78E63005CFC58 /* CourseworkApp.swift */; };
 		ED841DF629C78E63005CFC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED841DF529C78E63005CFC58 /* ContentView.swift */; };
 		ED841DF829C78E64005CFC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED841DF729C78E64005CFC58 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084E06B2D648ECA6A400C8D3 /* Pods_Coursework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coursework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8884DCBC3013F67D879A5ECC /* Pods-Coursework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursework.debug.xcconfig"; path = "Target Support Files/Pods-Coursework/Pods-Coursework.debug.xcconfig"; sourceTree = "<group>"; };
+		A13435337C61A1F4A616F76D /* Pods-Coursework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursework.release.xcconfig"; path = "Target Support Files/Pods-Coursework/Pods-Coursework.release.xcconfig"; sourceTree = "<group>"; };
 		ED841DF029C78E63005CFC58 /* Coursework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coursework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED841DF329C78E63005CFC58 /* CourseworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseworkApp.swift; sourceTree = "<group>"; };
 		ED841DF529C78E63005CFC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AF7F04DE9311A21679A030 /* Pods_Coursework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A28DDB578B70B801891B2164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084E06B2D648ECA6A400C8D3 /* Pods_Coursework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0761B795F9DE6D602188E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8884DCBC3013F67D879A5ECC /* Pods-Coursework.debug.xcconfig */,
+				A13435337C61A1F4A616F76D /* Pods-Coursework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED841DE729C78E63005CFC58 = {
 			isa = PBXGroup;
 			children = (
 				ED841DF229C78E63005CFC58 /* Coursework */,
 				ED841DF129C78E63005CFC58 /* Products */,
+				E0761B795F9DE6D602188E02 /* Pods */,
+				A28DDB578B70B801891B2164 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED841DFE29C78E64005CFC58 /* Build configuration list for PBXNativeTarget "Coursework" */;
 			buildPhases = (
+				CC079FB7DFEE42F375B238C6 /* [CP] Check Pods Manifest.lock */,
 				ED841DEC29C78E63005CFC58 /* Sources */,
 				ED841DED29C78E63005CFC58 /* Frameworks */,
 				ED841DEE29C78E63005CFC58 /* Resources */,
+				436D3F3C10AF129C1A0E38F1 /* [CP] Embed Pods Frameworks */,
+				CE618891C5EFED0E0B8C9717 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +159,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		436D3F3C10AF129C1A0E38F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC079FB7DFEE42F375B238C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coursework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE618891C5EFED0E0B8C9717 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coursework/Pods-Coursework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED841DEC29C78E63005CFC58 /* Sources */ = {
@@ -261,6 +348,7 @@
 		};
 		ED841DFF29C78E64005CFC58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8884DCBC3013F67D879A5ECC /* Pods-Coursework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +377,7 @@
 		};
 		ED841E0029C78E64005CFC58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13435337C61A1F4A616F76D /* Pods-Coursework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
